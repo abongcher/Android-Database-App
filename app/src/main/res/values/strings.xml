@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TBEC</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_view_log">View Log</string>
+    <string name="action_clear_log">Clear Log</string>
+    <string name="action_delete_all_data">Delete All</string>
+    <string name="action_save_all_data">Save to SD</string>
+    <string name="action_send_quiry">Send Quiry</string>
+    <string name="action_send_balance">Send Balance</string>
+
+    <string name="log_head">LOG</string>
+    <string name="view_log">logViewer</string>
+    <string name="no_logs">No logs to display</string>
+
+    <string name="more">More...</string>
+    <string name="delete">Delete</string>
+    <string name="open">Open</string>
+
+
+
+    <string name="howto">How To...</string>
+    <string name="tips">First input all your client datum. Secondly tell your client to the following:\n(i)For Balance inquiry type "bal" and sent it my mobile number. E.g. if you have install the app in your mobile phone with 9876543210, they will type "bal" and sent it to 9876543210.\n (ii) For change of mobile number they will type mob "client number" and send it to 9876543210.</string>
+</resources>

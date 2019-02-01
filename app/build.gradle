@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'tbeckey'
+            keyPassword 'p&b4uall'
+            storeFile file('/home/abongcher/AndroidStudioProjects/ActionBarCompat-ShareActionProvider/TBEC/build.gradle')
+            storePassword 'welc0me2p&b'
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "in.abongcher.tbec"
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionName "1.0"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            jniDebuggable true
+            renderscriptDebuggable true
+            pseudoLocalesEnabled false
+            zipAlignEnabled false
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            pseudoLocalesEnabled true
+            applicationIdSuffix '6788'
+            versionNameSuffix '0.01'
+        }
+    }
+    dexOptions {
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+}

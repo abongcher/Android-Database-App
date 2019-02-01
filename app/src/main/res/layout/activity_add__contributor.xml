@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="in.abongcher.tbec.Add_Contributor">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/customer_image"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/image" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_name"
+        android:hint="Name"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/customer_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinner_gender"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/edit_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_mobile"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:clickable="true"
+        android:hint="Mobile No"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/spinner_gender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/edit_fee"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/edit_mobile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:text="Submit"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+
+
+</RelativeLayout>
